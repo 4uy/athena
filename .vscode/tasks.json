@@ -5,7 +5,8 @@
 			"type": "deno",
 			"command": "run",
 			"args": [
-				"src/index.ts"
+				"--allow-net", // Allow network traffic
+				"src/index.ts", // Entrypoint
 			],
 			"problemMatcher": [
 				"$deno"
