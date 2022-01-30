@@ -2,6 +2,6 @@ import { WebSocketServer, WebSocketClient } from "https://deno.land/x/websocket/
 
 const wss = new WebSocketServer(1337);
 
-wss.on("connection", (ws: WebSocketClient) => {
+wss.on("connection", (_ws: WebSocketClient) => {
   console.log("New connection.");
 });
